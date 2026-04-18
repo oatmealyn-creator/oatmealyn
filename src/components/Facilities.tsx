@@ -43,7 +43,7 @@ export default function Facilities() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-ink p-8 rounded-2xl border border-white/5 hover:border-neon/30 transition-colors group"
+                className={`bg-ink p-8 rounded-2xl border border-white/5 hover:border-neon/30 transition-colors group ${i % 2 === 0 ? 'animate-float' : 'animate-float-delayed'}`}
               >
                 <div className="w-14 h-14 bg-surface rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-neon group-hover:text-ink transition-all">
                   <Icon className="w-6 h-6" />
