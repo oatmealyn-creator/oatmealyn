@@ -58,7 +58,7 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="relative h-[600px] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700"
+            className="relative h-[600px] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 animate-float shadow-xl shadow-neon/10"
           >
             <motion.img 
               style={{ y, scale: 1.15 }}

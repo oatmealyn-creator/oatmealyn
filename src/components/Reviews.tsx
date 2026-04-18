@@ -65,7 +65,7 @@ export default function Reviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-ink p-8 rounded-2xl flex flex-col justify-between border border-white/5 hover:border-neon/30 transition-colors"
+              className={`bg-ink p-8 rounded-2xl flex flex-col justify-between border border-white/5 hover:border-neon/30 transition-colors ${i % 2 === 0 ? 'animate-float' : 'animate-float-delayed'}`}
             >
               <div>
                 <div className="flex text-neon mb-4">

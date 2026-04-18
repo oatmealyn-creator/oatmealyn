@@ -34,7 +34,7 @@ export default function Booking() {
       <div className="absolute inset-0 z-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, black 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-2xl">
+        <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-2xl animate-float">
           <div className="text-center mb-12">
             <h2 className="font-display text-5xl md:text-6xl uppercase tracking-tight mb-4 text-ink">Claim Your <span className="text-outline text-transparent" style={{ WebkitTextStrokeColor: '#050505'}}>Spot</span></h2>
             <p className="text-ink/70 font-medium">Book a day pass or schedule a tour. No commitments.</p>

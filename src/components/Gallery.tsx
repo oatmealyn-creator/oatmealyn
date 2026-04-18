@@ -25,7 +25,7 @@ export default function Gallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`relative group overflow-hidden rounded-xl ${
+              className={`relative group overflow-hidden rounded-xl animate-float ${
                 i === 0 || i === 4 ? 'md:col-span-2' : ''
               } ${i === 2 ? 'md:row-span-2' : ''}`}
             >

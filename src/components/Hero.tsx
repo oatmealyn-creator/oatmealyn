@@ -6,17 +6,22 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img 
+        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-neon/20 blur-[100px] animate-float rounded-full mix-blend-screen pointer-events-none"></div>
+        <div className="absolute bottom-[-20%] right-[-10%] w-[60vw] h-[60vw] bg-neon/10 blur-[120px] animate-float-delayed rounded-full mix-blend-screen pointer-events-none"></div>
+        <motion.img 
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
           src="https://picsum.photos/seed/gymworkout/1920/1080" 
           alt="Gym Interior" 
-          className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+          className="w-full h-full object-cover opacity-40 mix-blend-overlay animate-float-slow"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-ink/30"></div>
       </div>
       
-      <div className="relative z-10 container mx-auto px-6 pt-20 flex flex-col items-center text-center">
+      <div className="relative z-10 container mx-auto px-6 pt-20 flex flex-col items-center text-center animate-float-delayed">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,6 +47,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 0.4 }}
+          className="animate-float"
         >
           <a href="#booking" onClick={() => playSwoosh()} className="group flex items-center gap-4 bg-neon text-ink px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-white transition-colors duration-300">
             Claim Your Spot
